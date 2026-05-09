@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a14"/>
+      <stop offset="100%" style="stop-color:#1a1a24"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4af37;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#d4af37;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#glow)"/>
+  <circle cx="960" cy="540" r="300" fill="none" stroke="#d4af37" stroke-width="0.5" opacity="0.2"/>
+  <circle cx="960" cy="540" r="200" fill="none" stroke="#d4af37" stroke-width="0.3" opacity="0.15"/>
+  <circle cx="960" cy="540" r="100" fill="none" stroke="#d4af37" stroke-width="0.2" opacity="0.1"/>
+  <text x="960" y="500" text-anchor="middle" font-family="serif" font-size="48" fill="#d4af37" opacity="0.6">Volt & Lumière</text>
+  <text x="960" y="560" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#d4af37" opacity="0.3">Électricité premium — Domotique — Éclairage d'architecture</text>
+</svg>

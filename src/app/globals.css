@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  /* Palette */
+  --color-primary: #0a0a14;
+  --color-accent: #d4af37;
+  --color-surface: #f5f5f5;
+  --color-charcoal: #1a1a24;
+  --color-stone: #2a2a34;
+  --color-warm-gray: #e8e5e0;
+  --color-pale-gold: #f0e6c8;
+
+  /* Typographie */
+  --font-heading: "Cormorant Garamond", serif;
+  --font-body: "Space Grotesk", sans-serif;
+
+  /* Espacements */
+  --spacing-section: 8rem;
+  --spacing-section-sm: 4rem;
+
+  /* Rayons */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  /* Transitions */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-expo: cubic-bezier(0.87, 0, 0.13, 1);
+
+  /* Z-index */
+  --z-header: 50;
+  --z-overlay: 40;
+  --z-modal: 60;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #d4af37 0%, #f0e6c8 50%, #d4af37 100%);
+  }
+
+  .gold-text {
+    color: var(--color-accent);
+  }
+
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+  }
+
+  .glass-panel-light {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(212, 175, 55, 0.15);
+  }
+
+  .section-padding {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .section-padding {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    .section-padding {
+      padding-left: 8rem;
+      padding-right: 8rem;
+    }
+  }
+}
+
+/* Lenis smooth scroll */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Selection personnalisée */
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 3px;
+}

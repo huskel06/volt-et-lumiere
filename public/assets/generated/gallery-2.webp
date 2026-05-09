@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2a34"/>
+      <stop offset="100%" style="stop-color:#0a0a14"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g2)"/>
+  <rect x="150" y="150" width="500" height="300" rx="10" fill="none" stroke="#d4af37" stroke-width="0.5" opacity="0.25"/>
+  <line x1="200" y1="300" x2="600" y2="300" stroke="#d4af37" stroke-width="0.3" opacity="0.2"/>
+  <text x="400" y="290" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#d4af37" opacity="0.4">Éclairage extérieur</text>
+</svg>
