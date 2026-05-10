@@ -6,12 +6,12 @@ import GalleryGrid from "@/components/molecules/GalleryGrid";
 import Button from "@/components/atoms/Button";
 
 const galleryItems = [
-    { src: "/assets/generated/hero-1.svg", alt: "Éclairage d'ambiance salon contemporain", span: "large" as const },
-    { src: "/assets/generated/gallery-1.svg", alt: "Domotique cuisine intelligente", span: "tall" as const },
-    { src: "/assets/generated/gallery-2.svg", alt: "Éclairage extérieur jardin", span: "default" as const },
-    { src: "/assets/generated/gallery-3.svg", alt: "Tableau électrique KNX", span: "wide" as const },
-    { src: "/assets/generated/gallery-4.svg", alt: "Ambiance lumineuse chambre", span: "default" as const },
-    { src: "/assets/generated/gallery-5.svg", alt: "Éclairage salle de bain", span: "default" as const },
+    { src: "/assets/generated/home-gallery-01.webp", alt: "Éclairage d'ambiance salon contemporain", span: "large" as const },
+    { src: "/assets/generated/home-gallery-02.webp", alt: "Domotique cuisine intelligente", span: "tall" as const },
+    { src: "/assets/generated/home-gallery-03.webp", alt: "Éclairage extérieur jardin", span: "default" as const },
+    { src: "/assets/generated/home-gallery-04.webp", alt: "Tableau électrique KNX", span: "wide" as const },
+    { src: "/assets/generated/home-gallery-05.webp", alt: "Ambiance lumineuse chambre", span: "default" as const },
+    { src: "/assets/generated/home-gallery-06.webp", alt: "Éclairage salle de bain", span: "default" as const },
 ];
 
 export default function GallerySection() {
