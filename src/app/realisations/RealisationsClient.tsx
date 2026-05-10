@@ -3,22 +3,9 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import SectionTitle from "@/components/atoms/SectionTitle";
-import GalleryGrid from "@/components/molecules/GalleryGrid";
 import ProjectModal from "@/components/molecules/ProjectModal";
 import PageShell from "@/components/templates/PageShell";
 import { staggerContainer, staggerItem } from "@/lib/animations";
-
-const galleryItems = [
-    { src: "/images/realisations-01.webp", alt: "Villa contemporaine — éclairage intégral KNX", span: "large" as const },
-    { src: "/images/realisations-02.webp", alt: "Appartement haussmannien — domotique complète", span: "tall" as const },
-    { src: "/images/realisations-03.webp", alt: "Loft industriel — éclairage d'ambiance", span: "default" as const },
-    { src: "/images/realisations-04.webp", alt: "Jardin paysager — mise en lumière extérieure", span: "wide" as const },
-    { src: "/images/realisations-05.webp", alt: "Salle de bain — éclairage chromothérapie", span: "default" as const },
-    { src: "/images/realisations-06.webp", alt: "Cuisine — plan de travail lumineux", span: "default" as const },
-    { src: "/images/realisations-07.webp", alt: "Tableau électrique KNX sur mesure", span: "default" as const },
-    { src: "/images/realisations-08.webp", alt: "Chambre parentale — scénario nuit", span: "wide" as const },
-    { src: "/images/realisations-09.webp", alt: "Terrasse — éclairage paysager", span: "tall" as const },
-];
 
 interface Project {
     title: string;
@@ -74,11 +61,6 @@ export default function RealisationsClient() {
                         light
                     />
                 </div>
-            </section>
-
-            {/* Galerie */}
-            <section className="section-padding py-section-sm md:py-section">
-                <GalleryGrid items={galleryItems} />
             </section>
 
             {/* Projets sélectionnés */}
