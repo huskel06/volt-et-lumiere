@@ -1,8 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import SectionTitle from "@/components/atoms/SectionTitle";
 import GalleryGrid from "@/components/molecules/GalleryGrid";
+import ProjectModal from "@/components/molecules/ProjectModal";
 import PageShell from "@/components/templates/PageShell";
 import { staggerContainer, staggerItem } from "@/lib/animations";
 
@@ -18,28 +20,48 @@ const galleryItems = [
     { src: "/images/realisations-09.webp", alt: "Terrasse — éclairage paysager", span: "tall" as const },
 ];
 
-const projects = [
+interface Project {
+    title: string;
+    location: string;
+    type: string;
+    year: string;
+    image: string;
+    description: string;
+}
+
+const projects: Project[] = [
     {
         title: "Villa Monceau",
         location: "Paris 16e",
         type: "Domotique complète KNX + Lutron",
         year: "2025",
+        image: "/images/realisations-01.webp",
+        description:
+            "Rénovation complète d'une villa haussmannienne de 400 m². Installation d'un système KNX intégral pilotant éclairage, volets, chauffage et sécurité. Partenariat Lutron pour les scénarios lumineux sur mesure.",
     },
     {
         title: "Loft Bastille",
         location: "Paris 11e",
         type: "Éclairage d'architecture + Hue Pro",
         year: "2024",
+        image: "/images/realisations-03.webp",
+        description:
+            "Transformation d'un loft industriel de 250 m². Mise en lumière architecturale avec Philips Hue Pro, spots sur rail et éclairage d'accentuation. Création de 12 scénarios lumineux personnalisés.",
     },
     {
         title: "Appartement Passy",
         location: "Paris 16e",
         type: "Rénovation électrique premium",
         year: "2024",
+        image: "/images/realisations-02.webp",
+        description:
+            "Rénovation électrique complète d'un appartement de 180 m². Tableau KNX sur mesure, éclairage d'ambiance multicouche, intégration domotique discrète dans les moulures d'époque.",
     },
 ];
 
 export default function RealisationsClient() {
+    const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
     return (
         <PageShell>
             {/* Hero */}
@@ -79,7 +101,8 @@ export default function RealisationsClient() {
                             <motion.div
                                 key={project.title}
                                 variants={staggerItem}
-                                className="group border border-accent/10 p-8 hover:border-accent/30 transition-all duration-700 cursor-pointer"
+                                onClick={() => setSelectedProject(project)}
+                                className="group border border-accent/10 p-8 hover:border-accent/30 hover:bg-accent/5 transition-all duration-700 cursor-pointer"
                             >
                                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                                     <div>
@@ -104,6 +127,12 @@ export default function RealisationsClient() {
                     </motion.div>
                 </div>
             </section>
+
+            {/* Modale projet */}
+            <ProjectModal
+                project={selectedProject}
+                onClose={() => setSelectedProject(null)}
+            />
         </PageShell>
     );
 }
