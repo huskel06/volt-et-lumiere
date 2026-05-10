@@ -51,18 +51,6 @@ export default function RealisationsClient() {
 
     return (
         <PageShell>
-            {/* Hero */}
-            <section className="bg-primary min-h-[50vh] md:min-h-[60vh] flex items-end pb-16 md:pb-20">
-                <div className="section-padding w-full pt-28">
-                    <SectionTitle
-                        label="Réalisations"
-                        title="Ce que la\nlumière révèle"
-                        subtitle="Neuf projets. Neuf écritures de la lumière. De Passy à Neuilly."
-                        light
-                    />
-                </div>
-            </section>
-
             {/* Projets sélectionnés */}
             <section className="bg-primary py-section-sm md:py-section">
                 <div className="section-padding">
