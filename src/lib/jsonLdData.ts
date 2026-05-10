@@ -15,7 +15,7 @@ export const jsonLdData = {
     },
     foundingDate: "2011",
     priceRange: "€€€",
-    image: "https://volt-lumiere-paris.fr/assets/generated/hero-1.webp",
+    image: "https://volt-lumiere-paris.fr/assets/generated/hero-1.svg",
     address: {
         "@type": "PostalAddress",
         addressLocality: "Paris",

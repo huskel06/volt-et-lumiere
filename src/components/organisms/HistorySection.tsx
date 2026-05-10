@@ -39,7 +39,7 @@ export default function HistorySection() {
                     className="aspect-[4/5] bg-primary/5 overflow-hidden"
                 >
                     <img
-                        src="/assets/generated/hero-1.webp"
+                        src="/images/hero-portrait.webp"
                         alt="Atelier Volt & Lumière"
                         className="w-full h-full object-cover"
                         loading="lazy"

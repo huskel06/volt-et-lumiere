@@ -7,15 +7,15 @@ import PageShell from "@/components/templates/PageShell";
 import { staggerContainer, staggerItem } from "@/lib/animations";
 
 const galleryItems = [
-    { src: "/assets/generated/hero-1.webp", alt: "Villa contemporaine — éclairage intégral KNX", span: "large" as const },
-    { src: "/assets/generated/gallery-1.webp", alt: "Appartement haussmannien — domotique complète", span: "tall" as const },
-    { src: "/assets/generated/gallery-2.webp", alt: "Loft industriel — éclairage d'ambiance", span: "default" as const },
-    { src: "/assets/generated/gallery-3.webp", alt: "Jardin paysager — mise en lumière extérieure", span: "wide" as const },
-    { src: "/assets/generated/gallery-4.webp", alt: "Salle de bain — éclairage chromothérapie", span: "default" as const },
-    { src: "/assets/generated/gallery-5.webp", alt: "Cuisine — plan de travail lumineux", span: "default" as const },
-    { src: "/assets/generated/gallery-1.webp", alt: "Tableau électrique KNX sur mesure", span: "default" as const },
-    { src: "/assets/generated/gallery-2.webp", alt: "Chambre parentale — scénario nuit", span: "wide" as const },
-    { src: "/assets/generated/gallery-3.webp", alt: "Terrasse — éclairage paysager", span: "tall" as const },
+    { src: "/assets/generated/hero-1.svg", alt: "Villa contemporaine — éclairage intégral KNX", span: "large" as const },
+    { src: "/assets/generated/gallery-1.svg", alt: "Appartement haussmannien — domotique complète", span: "tall" as const },
+    { src: "/assets/generated/gallery-2.svg", alt: "Loft industriel — éclairage d'ambiance", span: "default" as const },
+    { src: "/assets/generated/gallery-3.svg", alt: "Jardin paysager — mise en lumière extérieure", span: "wide" as const },
+    { src: "/assets/generated/gallery-4.svg", alt: "Salle de bain — éclairage chromothérapie", span: "default" as const },
+    { src: "/assets/generated/gallery-5.svg", alt: "Cuisine — plan de travail lumineux", span: "default" as const },
+    { src: "/assets/generated/gallery-1.svg", alt: "Tableau électrique KNX sur mesure", span: "default" as const },
+    { src: "/assets/generated/gallery-2.svg", alt: "Chambre parentale — scénario nuit", span: "wide" as const },
+    { src: "/assets/generated/gallery-3.svg", alt: "Terrasse — éclairage paysager", span: "tall" as const },
 ];
 
 const projects = [

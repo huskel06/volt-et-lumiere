@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
+import "@/app/globals.css";
 import { jsonLdData } from "@/lib/jsonLdData";
 
 export const metadata: Metadata = {
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
         url: "https://volt-lumiere-paris.fr",
         images: [
             {
-                url: "/assets/generated/hero-1.webp",
+                url: "/assets/generated/hero-1.svg",
                 width: 1200,
                 height: 630,
                 alt: "Volt & Lumière — Électricien premium Paris",
@@ -51,7 +52,7 @@ export const metadata: Metadata = {
         title: "Volt & Lumière — Électricien Premium Paris 16e",
         description:
             "Domotique KNX, éclairage d'architecture et installations premium. Certifié KNX, partenaire Lutron & Philips Hue Pro.",
-        images: ["/assets/generated/hero-1.webp"],
+        images: ["/assets/generated/hero-1.svg"],
         creator: "@volt-lumiere",
     },
     robots: {

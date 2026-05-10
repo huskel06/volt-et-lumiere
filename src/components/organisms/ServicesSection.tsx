@@ -11,18 +11,21 @@ const services = [
         title: "Éclairage d'architecture",
         description:
             "La lumière comme cinquième mur. Scénographies sur mesure où chaque source devient outil architectural — du trait franc au lavis d'ambiance. Conception, installation, programmation.",
+        imageUrl: "/images/service-1.webp",
     },
     {
         icon: "home" as const,
         title: "Domotique intelligente",
         description:
             "L'intelligence silencieuse du foyer. Automatisation KNX qui anticipe, s'adapte, disparaît. Volets, chauffage, sécurité, éclairage : tout dialogue, rien ne s'impose.",
+        imageUrl: "/images/service-2.webp",
     },
     {
         icon: "building" as const,
         title: "Résidentiel haut de gamme",
         description:
             "L'installation comme signature. Tableaux électriques pensés comme des pièces d'orfèvrerie, câblages invisibles, partenaires Lutron et Philips Hue Pro pour des systèmes qui traversent les décennies.",
+        imageUrl: "/images/service-3.webp",
     },
 ];
 

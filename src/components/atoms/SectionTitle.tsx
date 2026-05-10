@@ -12,6 +12,14 @@ interface SectionTitleProps {
     light?: boolean;
 }
 
+/** Découpe un texte sur les \n (newline réel ou littéral) et insère des <br /> */
+function splitLines(text: string) {
+    const normalized = text.replace(/\\n/g, "\n");
+    return normalized.split("\n").map((part, i) =>
+        i === 0 ? part : <><br key={i} />{part}</>
+    );
+}
+
 export default function SectionTitle({
     label,
     title,
@@ -45,7 +53,7 @@ export default function SectionTitle({
                     light ? "text-surface" : "text-primary"
                 )}
             >
-                {title}
+                {splitLines(title)}
             </motion.h2>
 
             {subtitle && (

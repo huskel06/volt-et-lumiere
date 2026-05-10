@@ -14,6 +14,8 @@ export default function HomeClient() {
                 title="L'électricité\ncomme matière"
                 subtitle="Domotique, éclairage d'architecture et installations premium. Paris 16e & Hauts-de-Seine. Certifié KNX, partenaire Lutron et Philips Hue Pro."
                 badges={["Certifié KNX", "Partenaire Lutron", "Philips Hue Pro"]}
+                bgImage="/images/hero-bg.webp"
+                portraitImage="/images/hero-portrait.webp"
             />
 
             <ServicesSection />
